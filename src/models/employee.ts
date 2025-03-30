@@ -31,8 +31,6 @@ employeeSchema.statics.build = (attrs: EmployeeAttrs) => {
   return new Employee(attrs);
 };
 
-
-
 const Employee = mongoose.model<EmployeeDoc, EmployeeModel>('Employee', employeeSchema);
 
 export { Employee };
