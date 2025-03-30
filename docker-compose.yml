@@ -1,0 +1,22 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001" 
+    environment:
+      - PORT=5001 
+      - JWT_KEY=asdasdf
+      - MONGO_URI=mongodb://mongo:27017/bd-demo
+    volumes:
+      - .:/app
+      - /app/node_modules
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:6
+    container_name: bd-demo-mongo
+    ports:
+      - "27017:27017"

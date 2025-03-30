@@ -1,0 +1,385 @@
+{
+	"info": {
+		"_postman_id": "6b86480f-971d-4436-828d-ee13e78f79e3",
+		"name": "KM_Emploees_App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22945080"
+	},
+	"item": [
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Create Employee",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"sadasasdasdasdd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/employees",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employees",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"Alabala nica\",\r\n    \"completed\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/employeess",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"employeess"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Employee",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/employees",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Employee",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5001/employees/67e7b2446aab50a9b3390eaf",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"employees",
+								"67e7b2446aab50a9b3390eaf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5001/employees/67e5182ec19fac53505071da",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"employees",
+								"67e5182ec19fac53505071da"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Longest Working Employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:5001/employees-pair?filePath=employees.csv",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"employees-pair"
+							],
+							"query": [
+								{
+									"key": "filePath",
+									"value": "employees.csv"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Project",
+			"item": [
+				{
+					"name": "Create Project",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Project 1123123w\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/projects",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Projects",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZTY2ZWZhMzcwYWNmZWRmMTRlMDM2YSIsImVtYWlsIjoidGVzdEB0ZXN0LnRlc3QiLCJpYXQiOjE3NDMxNjMyMDIsImV4cCI6MTc0MzE2NjgwMn0.7t4cidi0fedJcwfPq2cf18CjS_2zWUgtXB7dMTgXEMc",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"description\": \"CHange alabala nica\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/projects",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Project",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Change\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/projects/67e8f40934c08d6fcdbecc2d",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"projects",
+								"67e8f40934c08d6fcdbecc2d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Project",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\": \"completed\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/projects/67e8f40934c08d6fcdbecc2d",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"projects",
+								"67e8f40934c08d6fcdbecc2d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Project",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:5001/projects/67e94d9f3d8f199565d360ed",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"projects",
+								"67e94d9f3d8f199565d360ed"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "User Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test@test.test\",\r\n    \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/register",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test@test.test\",\r\n    \"password\": \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:5001/login",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:5001/logout",
+							"host": [
+								"localhost"
+							],
+							"port": "5001",
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,30 @@
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Output of 'npm pack'
+*.tgz
+
+# dotenv environment variable files
+.env
+.env.development
+.env.test.local
+.env.local
+
+.idea/
+.vscode
+package-lock.json
+.next/
+.parcel-cache/
+dist/
+Thumbs.db
+.env
